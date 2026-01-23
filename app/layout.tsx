@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link"; // Use Next.js Link for faster navigation
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -118,6 +119,7 @@ export default function RootLayout({
         <main className="pb-24 md:pt-24 md:pb-0 min-h-screen px-4 py-6">
           {children}
         </main>
+        <GoogleAnalytics gaId="G-H3LG8B5CDZ" />
       </body>
     </html>
   );
