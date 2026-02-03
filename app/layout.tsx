@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 // 1. SETUP BASE URL (Important for SEO images to work)
 // Replace 'https://your-domain.com' with your actual Vercel domain later
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://your-domain.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aktu-erp.in";
 
 // 2. SEO METADATA
 export const metadata: Metadata = {
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   },
   // Verification for Google Search Console (Add your code later)
   verification: {
-    google: "YOUR_GOOGLE_VERIFICATION_CODE",
+    google: "google9dfdbe3af6e2a0d5.html",
   },
 };
 
