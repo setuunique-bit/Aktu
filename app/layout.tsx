@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link"; // Use Next.js Link for faster navigation
 import "./globals.css";
 import { GoogleAnalytics } from '@next/third-parties/google';
-import Script from "next/script";
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -129,13 +129,7 @@ export default function RootLayout({
           {children}
         </main>
         <GoogleAnalytics gaId="G-S1Y2RJHJNF" />
- <Script
-    async
-    id="adsense-init"
-    strategy="afterInteractive"
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8193901665933827"
-     crossOrigin="anonymous"
-  />
+ 
       </body>
     </html>
   );
