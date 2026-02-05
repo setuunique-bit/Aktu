@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link"; // Use Next.js Link for faster navigation
 import "./globals.css";
-import { GoogleAnalytics} from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import Script from "next/script";
 
 
@@ -91,12 +91,7 @@ export default function RootLayout({
   return (
     <html lang="en">
      
-  <Script
-    async
-    strategy="afterInteractive"
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8193901665933827"
-    crossOrigin="anonymous"
-  />
+ 
 
 
 
@@ -132,7 +127,12 @@ export default function RootLayout({
           {children}
         </main>
         <GoogleAnalytics gaId="G-S1Y2RJHJNF" />
-
+ <Script
+    async
+    strategy="afterInteractive"
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8193901665933827"
+    crossOrigin="anonymous"
+  />
       </body>
     </html>
   );
