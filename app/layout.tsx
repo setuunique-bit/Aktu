@@ -2,7 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link"; // Use Next.js Link for faster navigation
 import "./globals.css";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics} from '@next/third-parties/google'
+import Script from "next/script";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -70,7 +72,7 @@ export const metadata: Metadata = {
   // Verification for Google Search Console (Add your code later)
   verification: {
     google: "EHtY1IUc0c4kgLm7u1kFJKYlktbgxCCKshxnEWun9UY",
-  },
+  }
 };
 
 // 3. SEPARATE VIEWPORT EXPORT (Required for Next.js 15)
@@ -88,6 +90,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+     
+  <Script
+    async
+    strategy="afterInteractive"
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8193901665933827"
+    crossOrigin="anonymous"
+  />
+
+
+
       <body className={`${inter.className} bg-gray-50 text-gray-900`}>
         {/* Navigation */}
         <nav className="fixed bottom-0 w-full bg-white border-t border-gray-200 p-3 flex justify-around md:top-0 md:bottom-auto md:border-b z-50 safe-area-pb">
@@ -120,6 +132,7 @@ export default function RootLayout({
           {children}
         </main>
         <GoogleAnalytics gaId="G-S1Y2RJHJNF" />
+
       </body>
     </html>
   );
