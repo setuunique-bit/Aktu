@@ -68,6 +68,8 @@ export const metadata: Metadata = {
     title: "AKTU Student Overview - Results & ERP",
     description: "Fastest access to AKTU OneView and ERP login.",
     images: ["/og-image.jpg"],
+  },other: {
+    "google-adsense-account": "ca-pub-8193901665933827",
   },
   // Verification for Google Search Console (Add your code later)
   verification: {
@@ -132,7 +134,7 @@ export default function RootLayout({
     id="adsense-init"
     strategy="afterInteractive"
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8193901665933827"
-    crossOrigin="anonymous"
+     crossOrigin="anonymous"
   />
       </body>
     </html>
