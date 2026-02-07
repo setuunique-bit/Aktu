@@ -150,7 +150,7 @@ export default function UniversityInfo() {
                 <p className="font-semibold text-gray-900 mb-1">General Helpline</p>
                 <div className="flex items-center gap-2 text-gray-600">
                   <Phone className="w-4 h-4" />
-                  <span>0522-2771079</span>
+                  <span>0522-2336805</span>
                 </div>
               </div>
 
