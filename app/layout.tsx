@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link"; // Use Next.js Link for faster navigation
 import "./globals.css";
 import Script from "next/script";
+import Footer from "@/components/Footer";
 
 
 
@@ -148,7 +149,7 @@ export default function RootLayout({
         </Script>
 
         {/* --- MANUAL ANALYTICS SCRIPT (Ends Here) --- */}
- 
+      <Footer/>
       </body>
     </html>
   );

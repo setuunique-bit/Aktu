@@ -49,7 +49,7 @@ export default function Footer() {
           <ul className="space-y-2 text-xs">
             <li>
               <Link 
-                href="https://erp.aktu.ac.in/" 
+                href="/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 title="Open Official AKTU ERP Portal"
@@ -60,24 +60,35 @@ export default function Footer() {
             </li>
             <li>
               <Link 
-                href="https://oneview.aktu.ac.in/" 
+                href="/University-info" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                title="Check AKTU OneView Results"
+                title="Get to know more about AKTU"
                 className="hover:text-blue-400 transition-colors flex items-center gap-2"
               >
-                <ExternalLink className="w-3 h-3" /> OneView Results
+                <ExternalLink className="w-3 h-3" /> Info
               </Link>
             </li>
             <li>
               <Link 
-                href="https://aktu.ac.in/circulars.html" 
+                href="/admissions" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                title="Read Latest AKTU Circulars"
+                title="Read About the Admission Process"
                 className="hover:text-blue-400 transition-colors flex items-center gap-2"
               >
-                <ExternalLink className="w-3 h-3" /> Latest Circulars
+                <ExternalLink className="w-3 h-3" /> Admission
+              </Link>
+            </li>
+                        <li>
+              <Link 
+                href="/lateral-entry" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                title="Read About the Admission Process"
+                className="hover:text-blue-400 transition-colors flex items-center gap-2"
+              >
+                <ExternalLink className="w-3 h-3" /> Lateral Entry Admission
               </Link>
             </li>
           </ul>
@@ -93,8 +104,23 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/terms" className="hover:text-blue-400 transition-colors" title="View Terms of Use">
+              <Link href="/Terms" className="hover:text-blue-400 transition-colors" title="View Terms of Use">
                 Terms of Use
+              </Link>
+            </li>
+              <li>
+              <Link href="/about" className="hover:text-blue-400 transition-colors" title="View Terms of Use">
+                About us
+              </Link>
+            </li>
+              <li>
+              <Link href="/contact" className="hover:text-blue-400 transition-colors" title="View Terms of Use">
+                Contact us
+              </Link>
+            </li>
+               <li>
+              <Link href="/disclaimer" className="hover:text-blue-400 transition-colors" title="View Terms of Use">
+                Disclaimer
               </Link>
             </li>
             <li className="text-gray-500 pt-2 text-[10px] leading-tight">

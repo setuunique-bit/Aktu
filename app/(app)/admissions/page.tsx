@@ -219,8 +219,7 @@ export default function Admissions() {
         </div>
       </main>
 
-      {/* FOOTER ADDED HERE */}
-      <Footer />
+     
     </div>
   );
 }

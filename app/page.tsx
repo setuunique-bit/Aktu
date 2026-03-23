@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "../components/Footer"; // ✅ CORRECT
+
 import { useState } from "react";
 import {
   BookOpen,
@@ -133,7 +133,7 @@ export default function Home() {
       {/* Top Banner */}
       <div className="bg-orange-500 text-white text-center py-2 text-xs md:text-sm font-medium px-4">
         
-       Rapid Access Portal for Dr. A.P.J Abdul Kalam Technical University Resources
+       ⚡ The Fastest Way to Access AKTU OneView Results & ERP Dashboard
       </div>
 
       <main className="max-w-4xl mx-auto px-4 py-8 space-y-8">
@@ -228,7 +228,7 @@ export default function Home() {
           </p>
         </section>
 
-        {/* Footer */}
+        {/* Footer
         <footer className="text-center space-y-6 pt-8 pb-8 border-t border-gray-200">
           <div className="flex flex-col items-center gap-2 text-sm text-blue-600 font-medium">
             <Link href="https://aktu.ac.in/" className="hover:underline">
@@ -254,7 +254,7 @@ export default function Home() {
             </Link>
             .
           </p>
-        </footer>
+        </footer> */}
       </main>
 
       {/* POPUP MODAL SECTION */}
@@ -345,7 +345,7 @@ export default function Home() {
         </div>
         
       )}
-          <div><Footer /></div>
+        
     </div>
   );
 }
