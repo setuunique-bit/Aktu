@@ -22,6 +22,7 @@ import {
   ExternalLink,
   ShoppingBag, // New icon for the deal section
 } from "lucide-react";
+import { Herr_Von_Muellerhoff } from "next/font/google";
 
 // LINKS DATA
 const quickLinks = [
@@ -130,6 +131,9 @@ export default function Home() {
 
   return (
     <div className="bg-gray-50 min-h-screen pb-24">
+     
+
+{/* --- AFFILIATE EARNING SECTION END --- */}
       {/* Top Banner */}
       <div className="bg-orange-500 text-white text-center py-2 text-xs md:text-sm font-medium px-4">
         
@@ -182,7 +186,8 @@ export default function Home() {
         {/* Place your Google AdSense Display Ad code inside this div */}
         {/* <div className="w-full h-24 bg-gray-200 rounded-lg flex items-center justify-center border border-gray-300">
           <span className="text-gray-500 text-sm font-semibold tracking-wider">
-            ADVERTISEMENT SPACE
+          <img src="" alt="Ad" className="w-full h-full object-contain" />
+         
           </span>
         </div> */}
         {/* --- ADVERTISEMENT SPACE END --- */}
@@ -315,7 +320,7 @@ export default function Home() {
                   Student Recommendation
                 </p>
                 <a
-                  href="#" // 🔴 REPLACE THIS WITH YOUR AMAZON AFFILIATE LINK
+                  href="https://amzn.to/4uTzHOS" // 🔴 REPLACE THIS WITH YOUR AMAZON AFFILIATE LINK
                   target="_blank"
                   className="flex items-center gap-3 bg-yellow-50 border border-yellow-200 p-3 rounded-lg hover:bg-yellow-100 transition-colors text-left group"
                 >
