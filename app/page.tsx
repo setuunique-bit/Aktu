@@ -137,7 +137,7 @@ export default function Home() {
       {/* Top Banner */}
       <div className="bg-orange-500 text-white text-center py-2 text-xs md:text-sm font-medium px-4">
         
-       ⚡ The Fastest Way to Access AKTU OneView Results & ERP Dashboard
+       ⚡ The Fastest Way to Access AKTU OneView Results and other Resources
       </div>
 
       <main className="max-w-4xl mx-auto px-4 py-8 space-y-8">

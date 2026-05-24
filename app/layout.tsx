@@ -154,10 +154,10 @@ export default function RootLayout({
           src="https://pl29375775.profitablecpmratenetwork.com/ba/fb/05/bafb05638dad97c021920e01f7260e11.js" 
           strategy="lazyOnload" 
         /> */}
-        <Script 
+        {/* <Script 
   src="https://pl29375776.profitablecpmratenetwork.com/fb/d1/c2/fbd1c258837130c388a581e8b49ff8a6.js" 
   strategy="lazyOnload" 
-/>
+/> */}
 
       </body>
     </html>
