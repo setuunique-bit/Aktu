@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: "AKTU Student Overview - OneView, ERP, Results & Syllabus",
   },
   description:
-    "Your #1 unofficial guide for Dr. A.P.J. Abdul Kalam Technical University. Fast access to AKTU OneView Results, ERP Login, Circulars, and B.Tech Syllabus 2026.",
+    "Your 1 unofficial guide for Dr. A.P.J. Abdul Kalam Technical University. Fast access to AKTU OneView Results, ERP Login, Circulars, and B.Tech Syllabus 2026.",
   keywords: [
     "AKTU OneView",
     "AKTU Result 2026",
@@ -129,6 +129,12 @@ export default function RootLayout({
         <main className="pb-24 md:pt-24 md:pb-0 min-h-screen px-4 py-6">
           {children}
         </main>
+        <Script
+          id="adsbygoogle-init"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8193901665933827"
+        />
         {/* --- MANUAL ANALYTICS SCRIPT (Starts Here) --- */}
         <Script
           strategy="afterInteractive"
@@ -149,6 +155,29 @@ export default function RootLayout({
         </Script>
 
         {/* --- MANUAL ANALYTICS SCRIPT (Ends Here) --- */}
+        {/* --- 🚀 INVISIBLE SEO SCHEMA (JSON-LD) FOR GOOGLE BOT 🚀 --- */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "AKTU Student Overview",
+              "url": "https://aktu-erp.in",
+              "description": "Fastest access to AKTU OneView Results, ERP Login, and Admit Cards.",
+              "publisher": {
+                "@type": "Organization",
+                "name": "AKTU Student Hub"
+              },
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://aktu-erp.in/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }),
+          }}
+        />
+        {/* ----------------------------------------------------------- */}
       <Footer/>
       {/* <Script 
           src="https://pl29375775.profitablecpmratenetwork.com/ba/fb/05/bafb05638dad97c021920e01f7260e11.js" 

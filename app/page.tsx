@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
 import { useState } from "react";
 import {
   BookOpen,
@@ -20,11 +19,14 @@ import {
   User,
   X,
   ExternalLink,
-  ShoppingBag, // New icon for the deal section
+  ShoppingBag,
+  MonitorSmartphone,
+  KeyRound,
+  FileCheck2,
+  AlertTriangle
 } from "lucide-react";
-import { Herr_Von_Muellerhoff } from "next/font/google";
 
-// LINKS DATA
+// LINKS DATA - Fortified with Internal Page Links to boost site structure
 const quickLinks = [
   {
     title: "AKTU OneView Results",
@@ -34,14 +36,6 @@ const quickLinks = [
     color: "text-blue-600",
     bg: "bg-blue-50",
   },
-  // {
-  //   title: "SGPA to Percentage",
-  //   description: "Calculate Your GPA",
-  //   icon: Calculator,
-  //   href: "#",
-  //   color: "text-green-600",
-  //   bg: "bg-green-50",
-  // },
   {
     title: "AKTU ERP Login",
     description: "Student Dashboard",
@@ -49,6 +43,13 @@ const quickLinks = [
     href: "https://erp.aktu.ac.in/login.aspx",
     color: "text-purple-600",
     bg: "bg-purple-50",
+    // 👇 Contextual Ad for Coursework
+    affiliate: {
+      title: "dee",
+      desc: "Top pick for CSE Students",
+      discount: "24% OFF",
+      link: "https://amzn.to/4dQkZjW"
+    }
   },
   {
     title: "Download Admit Card",
@@ -72,7 +73,12 @@ const quickLinks = [
     icon: BookOpen,
     href: "https://aktu.ac.in/syllabus.html",
     color: "text-teal-600",
-    bg: "bg-teal-50",
+    bg: "bg-teal-50",affiliate: {
+      title: "Casio Scientific Calculator",
+      desc: "AKTU Exam Approved",
+      discount: "24% OFF",
+      link: "https://amzn.to/4dQkZjW"
+    }
   },
   {
     title: "Fee Payment",
@@ -89,6 +95,22 @@ const quickLinks = [
     href: "https://ndl.iitkgp.ac.in/",
     color: "text-indigo-600",
     bg: "bg-indigo-50",
+  },
+  {
+    title: "Lateral Entry (LEET)",
+    description: "B.Tech Direct 2nd Year",
+    icon: School,
+    href: "/lateral-entry",
+    color: "text-emerald-600",
+    bg: "bg-emerald-50",
+  },
+  {
+    title: "Student Deals & Gear",
+    description: "Laptops & Accessories",
+    icon: ShoppingBag,
+    href: "https://amzn.to/4uTzHOS",
+    color: "text-amber-600",
+    bg: "bg-amber-50",
   },
   {
     title: "Helpline & Contact",
@@ -114,14 +136,6 @@ const quickLinks = [
     color: "text-blue-800",
     bg: "bg-blue-50",
   },
-  {
-    title: "AKTU Admission 2026",
-    description: "Registration Process",
-    icon: School,
-    href: "/admissions",
-    color: "text-green-800",
-    bg: "bg-green-50",
-  },
 ];
 
 export default function Home() {
@@ -131,13 +145,9 @@ export default function Home() {
 
   return (
     <div className="bg-gray-50 min-h-screen pb-24">
-     
-
-{/* --- AFFILIATE EARNING SECTION END --- */}
       {/* Top Banner */}
       <div className="bg-orange-500 text-white text-center py-2 text-xs md:text-sm font-medium px-4">
-        
-       ⚡ The Fastest Way to Access AKTU OneView Results and other Resources
+        ⚡ The Fastest Way to Access AKTU OneView Results and other Resources
       </div>
 
       <main className="max-w-4xl mx-auto px-4 py-8 space-y-8">
@@ -187,7 +197,6 @@ export default function Home() {
         {/* <div className="w-full h-24 bg-gray-200 rounded-lg flex items-center justify-center border border-gray-300">
           <span className="text-gray-500 text-sm font-semibold tracking-wider">
           <img src="" alt="Ad" className="w-full h-full object-contain" />
-         
           </span>
         </div> */}
         {/* --- ADVERTISEMENT SPACE END --- */}
@@ -215,6 +224,61 @@ export default function Home() {
           ))}
         </section>
 
+        {/* --- 🚀 HIGH-VALUE EXTENDED SEO CONTENT TO RESTORE RANKING 🚀 --- */}
+        <section className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-200 space-y-6 text-left">
+          <div className="text-center border-b border-gray-100 pb-4">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900 flex items-center justify-center gap-2">
+              <MonitorSmartphone className="w-6 h-6 text-blue-600" />
+              Navigating the AKTU ERP Login & Student Portal
+            </h2>
+            <p className="text-gray-500 text-xs md:text-sm mt-1">
+              An informative guide to tracking results, examination forms, and your personal profile.
+            </p>
+          </div>
+
+          <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
+            <p>
+              The Dr. A.P.J. Abdul Kalam Technical University (AKTU) Enterprise Resource Planning portal, commonly termed the AKTU ERP, acts as the digital backbone for technical education across Uttar Pradesh. Whether you are registered in an undergraduate B.Tech program or pursuing professional postgraduate streams, your entire academic lifecycle relies on managing credentials through this secure user gateway.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 pt-2">
+              <div className="space-y-3">
+                <h3 className="font-bold text-gray-900 flex items-center gap-2 text-base">
+                  <FileCheck2 className="w-5 h-5 text-green-600" />
+                  Key Tasks Managed via Portal
+                </h3>
+                <ul className="list-disc pl-5 space-y-1.5 text-xs md:text-sm">
+                  <li><strong>Semester Examination Forms:</strong> Completing choice filling for elective modules and final submission.</li>
+                  <li><strong>Digital Admit Cards:</strong> Accessing official session tickets before arriving at designated test centers.</li>
+                  <li><strong>Fee Defaulter Clearances:</strong> Monitoring outstanding exam fee verification tallies directly compiled by institutional accounts.</li>
+                </ul>
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="font-bold text-gray-900 flex items-center gap-2 text-base">
+                  <KeyRound className="w-5 h-5 text-purple-600" />
+                  Troubleshooting Common Portal Lockouts
+                </h3>
+                <p className="text-xs md:text-sm">
+                  If your user dashboard displays password errors or skips security checks during odd/even evaluation timelines:
+                </p>
+                <ol className="list-decimal pl-5 space-y-1 text-xs">
+                  <li>Navigate directly to the official password recovery submenu on the main university subdomain login.</li>
+                  <li>Provide your persistent University Roll Number to request a validation token.</li>
+                  <li>Ensure your institute registrar updates modifications to mobile numbers or email links to avoid verification failures.</li>
+                </ol>
+              </div>
+            </div>
+
+            <div className="bg-amber-50 rounded-xl border border-amber-200 p-4 mt-4 flex gap-3 items-start">
+              <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              <div className="text-xs text-amber-900">
+                <strong>Important Note on AKTU OneView System:</strong> For tracking academic performance history, marks tallies, or internal sessional parameters, remember that the **OneView Portal** runs independently from primary profile logins. This means security code updates processed inside the ERP screen will not lock out your access to historical marks grids.
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Secondary SEO Content */}
         <section className="bg-blue-50 p-6 rounded-2xl text-center shadow-sm border border-blue-100">
           <h2 className="text-lg md:text-xl font-bold text-blue-900 mb-2 flex items-center justify-center gap-2">
@@ -232,34 +296,6 @@ export default function Home() {
             networks.
           </p>
         </section>
-
-        {/* Footer
-        <footer className="text-center space-y-6 pt-8 pb-8 border-t border-gray-200">
-          <div className="flex flex-col items-center gap-2 text-sm text-blue-600 font-medium">
-            <Link href="https://aktu.ac.in/" className="hover:underline">
-              Official AKTU Website
-            </Link>
-            <Link href="https://erp.aktu.ac.in/" className="hover:underline">
-              AKTU ERP Login
-            </Link>
-            <Link
-              href="https://oneview.aktu.ac.in/"
-              className="hover:underline"
-            >
-              OneView Results
-            </Link>
-          </div>
-
-          <p className="text-xs text-gray-400 max-w-lg mx-auto">
-            ⚠️ Disclaimer: This is a student-friendly resource portal. We are
-            not the official university website. For official notices, always
-            verify at
-            <Link href="https://aktu.ac.in" className="underline ml-1">
-              aktu.ac.in
-            </Link>
-            .
-          </p>
-        </footer> */}
       </main>
 
       {/* POPUP MODAL SECTION */}
@@ -313,27 +349,44 @@ export default function Home() {
                 <ExternalLink className="w-4 h-4" />
               </Link>
 
-              {/* --- 💰 AFFILIATE EARNING SECTION START 💰 --- */}
-              {/* This appears while the user is looking at the popup */}
-              <div className="w-full mt-5 pt-4 border-t border-dashed border-gray-200">
-                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">
-                  Student Recommendation
-                </p>
+             {/* --- 💰 DYNAMIC AFFILIATE EARNING SECTION 💰 --- */}
+              <div className="w-full mt-6 pt-4 border-t border-dashed border-gray-200">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="bg-red-100 text-red-700 px-2 py-0.5 rounded text-[9px] font-extrabold uppercase tracking-wider animate-pulse border border-red-200">
+                    Hot Deal
+                  </span>
+                  <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                    Student Gear
+                  </p>
+                </div>
+                
                 <a
-                  href="https://amzn.to/4uTzHOS" // 🔴 REPLACE THIS WITH YOUR AMAZON AFFILIATE LINK
+                  href={selectedLink.affiliate?.link || "https://amzn.to/4uTzHOS"}
                   target="_blank"
-                  className="flex items-center gap-3 bg-yellow-50 border border-yellow-200 p-3 rounded-lg hover:bg-yellow-100 transition-colors text-left group"
+                  className="flex flex-col gap-3 bg-gradient-to-br from-yellow-50 to-orange-50 border border-yellow-300 p-3.5 rounded-xl hover:shadow-md transition-all text-left group"
                 >
-                  <div className="bg-white p-2 rounded-md shadow-sm">
-                    <ShoppingBag className="w-5 h-5 text-yellow-600" />
+                  <div className="flex items-center gap-3">
+                    <div className="bg-white p-2.5 rounded-lg shadow-sm border border-yellow-100">
+                      <ShoppingBag className="w-6 h-6 text-orange-500 group-hover:scale-110 transition-transform" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-extrabold text-gray-900 leading-tight group-hover:text-blue-700 transition-colors">
+                        {/* 👇 Dynamic Product Title */}
+                        {selectedLink.affiliate?.title || "Apple MacBook Air M1"}
+                      </p>
+                      <p className="text-[11px] text-gray-600 mt-1 font-medium">
+                        {/* 👇 Dynamic Subtitle & Discount */}
+                        {selectedLink.affiliate?.desc || "Top pick for CSE Students"} •{" "}
+                        <span className="text-green-600 font-bold bg-green-100 px-1 py-0.5 rounded">
+                          {selectedLink.affiliate?.discount || "24% OFF"}
+                        </span>
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-xs font-bold text-gray-800 group-hover:text-blue-700">
-                      Best Laptop for Coding 2026
-                    </p>
-                    <p className="text-[10px] text-gray-500">
-                      Top pick for CSE Students &rarr;
-                    </p>
+                  
+                  {/* Action Button */}
+                  <div className="w-full bg-orange-500 text-white text-xs font-bold py-2 rounded-lg text-center shadow-sm group-hover:bg-orange-600 transition-colors">
+                    Check Price on Amazon &rarr;
                   </div>
                 </a>
               </div>
@@ -342,15 +395,10 @@ export default function Home() {
               <p className="text-xs text-gray-400 mt-1">
                 Redirecting to official source
               </p>
-              
             </div>
-           
           </div>
-         
         </div>
-        
       )}
-        
     </div>
   );
 }
