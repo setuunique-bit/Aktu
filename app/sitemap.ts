@@ -51,6 +51,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
   lastModified: new Date(),
   changeFrequency: 'weekly',
   priority: 0.8,
+},
+{
+  url: `${baseUrl}/result`,
+  lastModified: new Date(),
+  changeFrequency: 'weekly',
+  priority: 0.8,
+},
+{
+  url: `${baseUrl}/admit_card`,
+  lastModified: new Date(),
+  changeFrequency: 'weekly',
+  priority: 0.8,
+},
+{
+  url: `${baseUrl}/circular`,
+  lastModified: new Date(),
+  changeFrequency: 'weekly',
+  priority: 0.8,
+},
+{
+  url: `${baseUrl}/user-id`,
+  lastModified: new Date(),
+  changeFrequency: 'weekly',
+  priority: 0.8,
 }
   ];
 }
